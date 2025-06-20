@@ -295,89 +295,99 @@
             <p style="margin-top: 30px; font-size: 1.2rem;">クライアントが「お客さん」、サーバーが「お店」のような関係です</p>
         </div>
 
-        <!-- スライド 5: リクエスト・レスポンスの流れ -->
+        <!-- スライド 5: リクエスト・レスポンスの流れ（静的サイト） -->
         <div class="slide">
             <h2>リクエスト・レスポンスの流れ</h2>
-            <h3 style="color: #6c757d; margin-bottom: 15px; font-size: 1.5rem;">📄 静的サイトの場合</h3>
+            <h3 style="color: #6c757d; margin-bottom: 30px; font-size: 2rem;">📄 静的サイトの場合</h3>
             <div class="computer-server-diagram">
-                <div class="computer" style="min-width: 240px;">
+                <div class="computer" style="min-width: 300px;">
                     <div class="device-icon">💻</div>
-                    <h3 style="font-size: 1.3rem;">クライアント</h3>
-                    <div style="margin: 15px 0;">
-                        <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                    <h3 style="font-size: 1.5rem;">クライアント</h3>
+                    <div style="margin: 20px 0;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>1.</strong> URLを入力
                         </div>
-                        <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>2.</strong> リクエスト送信
                         </div>
-                        <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>4.</strong> HTMLを表示
                         </div>
                     </div>
                 </div>
                 <div class="request-response">
-                    <div style="margin: 15px 0;">
-                        <span style="color: #e74c3c; font-size: 1.2rem;">リクエスト →</span>
+                    <div style="margin: 20px 0;">
+                        <span style="color: #e74c3c; font-size: 1.5rem;">リクエスト →</span>
                     </div>
-                    <div style="margin: 15px 0;">
-                        <span style="color: #27ae60; font-size: 1.2rem;">← レスポンス</span>
+                    <div style="margin: 20px 0;">
+                        <span style="color: #27ae60; font-size: 1.5rem;">← レスポンス</span>
                     </div>
                 </div>
-                <div class="server-box" style="min-width: 240px; border-color: #6c757d;">
+                <div class="server-box" style="min-width: 300px; border-color: #6c757d;">
                     <div class="device-icon">🖥️</div>
-                    <h3 style="font-size: 1.3rem;">サーバー</h3>
-                    <div style="margin: 15px 0;">
-                        <div style="background: #e9ecef; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                    <h3 style="font-size: 1.5rem;">サーバー</h3>
+                    <div style="margin: 20px 0;">
+                        <div style="background: #e9ecef; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>3.</strong> ファイル読み込み・送信
                         </div>
-                        <div style="background: #e9ecef; padding: 8px; border-radius: 8px; margin: 8px 0; font-size: 0.8rem; color: #6c757d;">
+                        <div style="background: #e9ecef; padding: 12px; border-radius: 8px; margin: 10px 0; font-size: 1rem; color: #6c757d;">
                             処理なし（高速）
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <h3 style="color: #856404; margin: 20px 0 15px 0; font-size: 1.5rem;">⚡ 動的サイト（PHP）の場合</h3>
+            <div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 10px; border: 2px solid #6c757d;">
+                <p style="font-size: 1.3rem; color: #2c3e50; text-align: center;"><strong>特徴：</strong> シンプルで高速、全員に同じ内容を表示</p>
+            </div>
+        </div>
+
+        <!-- スライド 6: リクエスト・レスポンスの流れ（動的サイト） -->
+        <div class="slide">
+            <h2>リクエスト・レスポンスの流れ</h2>
+            <h3 style="color: #856404; margin-bottom: 30px; font-size: 2rem;">⚡ 動的サイト（PHP）の場合</h3>
             <div class="computer-server-diagram">
-                <div class="computer" style="min-width: 240px;">
+                <div class="computer" style="min-width: 300px;">
                     <div class="device-icon">💻</div>
-                    <h3 style="font-size: 1.3rem;">クライアント</h3>
-                    <div style="margin: 15px 0;">
-                        <div style="background: #e8f4fd; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                    <h3 style="font-size: 1.5rem;">クライアント</h3>
+                    <div style="margin: 20px 0;">
+                        <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>1.</strong> URLを入力
                         </div>
-                        <div style="background: #e8f4fd; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                        <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>2.</strong> リクエスト送信
                         </div>
-                        <div style="background: #e8f4fd; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                        <div style="background: #e8f4fd; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>5.</strong> HTMLを表示
                         </div>
                     </div>
                 </div>
                 <div class="request-response">
-                    <div style="margin: 15px 0;">
-                        <span style="color: #e74c3c; font-size: 1.2rem;">リクエスト →</span>
+                    <div style="margin: 20px 0;">
+                        <span style="color: #e74c3c; font-size: 1.5rem;">リクエスト →</span>
                     </div>
-                    <div style="margin: 15px 0;">
-                        <span style="color: #27ae60; font-size: 1.2rem;">← レスポンス</span>
+                    <div style="margin: 20px 0;">
+                        <span style="color: #27ae60; font-size: 1.5rem;">← レスポンス</span>
                     </div>
                 </div>
-                <div class="server-box" style="min-width: 240px;">
+                <div class="server-box" style="min-width: 300px;">
                     <div class="device-icon">🖥️</div>
-                    <h3 style="font-size: 1.3rem;">サーバー</h3>
-                    <div style="margin: 15px 0;">
-                        <div style="background: #fdf2e8; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                    <h3 style="font-size: 1.5rem;">サーバー</h3>
+                    <div style="margin: 20px 0;">
+                        <div style="background: #fdf2e8; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>3.</strong> PHP処理実行
                         </div>
-                        <div style="background: #fdf2e8; padding: 10px; border-radius: 8px; margin: 8px 0; font-size: 0.9rem;">
+                        <div style="background: #fdf2e8; padding: 15px; border-radius: 8px; margin: 10px 0; font-size: 1.1rem;">
                             <strong>4.</strong> HTML生成・送信
                         </div>
                     </div>
                 </div>
             </div>
+            <div style="margin-top: 40px; padding: 20px; background: #fff3cd; border-radius: 10px; border: 2px solid #ffc107;">
+                <p style="font-size: 1.3rem; color: #2c3e50; text-align: center;"><strong>特徴：</strong> 柔軟で個人化、ユーザーごとに異なる内容を表示</p>
+            </div>
         </div>
 
-        <!-- スライド 6: PHPでのサーバー処理 -->
+        <!-- スライド 7: PHPでのサーバー処理 -->
         <div class="slide">
             <h2>PHPでのサーバー処理例</h2>
             <div class="code-block">&lt;?php
@@ -400,7 +410,7 @@
             <p>サーバーが<span class="highlight">動的にHTML</span>を生成してクライアントに送信</p>
         </div>
 
-        <!-- スライド 7: クライアント側の処理 -->
+        <!-- スライド 8: クライアント側の処理 -->
         <div class="slide">
             <h2>クライアント側での処理</h2>
             <div class="tech-stack">
@@ -420,7 +430,7 @@
             <p style="margin-top: 30px;">ブラウザがこれらを解釈して、美しいWebページを表示します</p>
         </div>
 
-        <!-- スライド 8: 具体的な処理の流れ -->
+        <!-- スライド 9: 具体的な処理の流れ -->
         <div class="slide">
             <h2>具体的な処理の流れ</h2>
             <div class="url-bar">https://example.com/user.php?name=田中</div>
@@ -452,7 +462,7 @@
             </div>
         </div>
 
-        <!-- スライド 9: 静的サイト vs 動的サイト -->
+        <!-- スライド 10: 静的サイト vs 動的サイト -->
         <div class="slide">
             <h2>静的サイト vs 動的サイト</h2>
             <div style="display: flex; justify-content: space-between; gap: 30px; max-width: 1200px;">
@@ -501,7 +511,7 @@
             </div>
         </div>
 
-        <!-- スライド 10: レスポンスの中身 -->
+        <!-- スライド 11: レスポンスの中身 -->
         <div class="slide">
             <h2>サーバーからのレスポンス例</h2>
             <div style="display: flex; gap: 15px; align-items: flex-start; max-width: 1000px;">
@@ -544,7 +554,7 @@ Content-Type: text/html; charset=UTF-8
             </div>
         </div>
 
-        <!-- スライド 11: PHPを学ぶとできること -->
+        <!-- スライド 12: PHPを学ぶとできること -->
         <div class="slide">
             <h2>PHPを学ぶとできること</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; max-width: 1000px;">
@@ -615,7 +625,7 @@ Content-Type: text/html; charset=UTF-8
             </div>
         </div>
 
-        <!-- スライド 12: まとめ -->
+        <!-- スライド 13: まとめ -->
         <div class="slide">
             <h2>まとめ</h2>
             <ul style="font-size: 1.3rem; max-width: 700px;">
@@ -629,7 +639,7 @@ Content-Type: text/html; charset=UTF-8
             </div>
         </div>
 
-        <!-- スライド 13: 終了 -->
+        <!-- スライド 14: 終了 -->
         <div class="slide">
             <div style="margin-top: 50px;">
                 <h1 style="font-size: 3rem;">ありがとうございました！</h1>
@@ -639,7 +649,7 @@ Content-Type: text/html; charset=UTF-8
     </div>
 
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">13</span>
+        <span id="current-slide">1</span> / <span id="total-slides">14</span>
     </div>
 
     <div class="navigation">
