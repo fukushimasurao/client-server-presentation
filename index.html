@@ -387,7 +387,87 @@
             </div>
         </div>
 
-        <!-- スライド 7: PHPでのサーバー処理 -->
+        <!-- スライド 7: XAMPPでの開発環境 -->
+        <div class="slide">
+            <h2>開発環境：XAMPP</h2>
+            <h3 style="color: #2c3e50; margin-bottom: 30px; font-size: 1.8rem;">🏠 パソコンの中に仮想サーバーを構築</h3>
+            
+            <!-- 本来のサーバー環境 -->
+            <div style="margin-bottom: 40px;">
+                <h4 style="color: #e74c3c; font-size: 1.4rem; margin-bottom: 20px;">❌ 本来のサーバー環境</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto;">
+                    <div class="computer">
+                        <div class="device-icon">💻</div>
+                        <h4>開発者のPC</h4>
+                        <p>コードを書く</p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; margin: 0 20px;">
+                        <span style="color: #e74c3c; font-size: 1.2rem;">アップロード →</span>
+                        <span style="color: #27ae60; font-size: 1.2rem;">← アクセス</span>
+                    </div>
+                    <div class="server-box" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52);">
+                        <div class="device-icon">☁️</div>
+                        <h4 style="color: white;">外部サーバー</h4>
+                        <p style="color: white;">AWS・さくら・エックス等</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XAMPPでの開発環境 -->
+            <div>
+                <h4 style="color: #27ae60; font-size: 1.4rem; margin-bottom: 20px;">✅ XAMPPでの開発環境</h4>
+                <div style="position: relative; max-width: 600px; margin: 0 auto;">
+                    <!-- パソコンの枠 -->
+                    <div style="border: 4px solid #3498db; border-radius: 20px; padding: 40px; background: linear-gradient(135deg, #e8f4fd, #f0f8ff);">
+                        <h3 style="text-align: center; color: #2980b9; margin-bottom: 30px;">💻 あなたのパソコン</h3>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <!-- ブラウザ -->
+                            <div style="background: white; border: 2px solid #27ae60; border-radius: 10px; padding: 15px; text-align: center; min-width: 120px;">
+                                <div style="font-size: 2rem;">🌐</div>
+                                <h5>ブラウザ</h5>
+                                <p style="font-size: 0.9rem;">localhost:80</p>
+                            </div>
+                            
+                            <!-- 矢印 -->
+                            <div style="margin: 0 15px;">
+                                <span style="color: #e74c3c; font-size: 1.1rem;">→</span>
+                                <span style="color: #27ae60; font-size: 1.1rem;">←</span>
+                            </div>
+                            
+                            <!-- XAMPP -->
+                            <div style="background: white; border: 2px solid #e74c3c; border-radius: 10px; padding: 15px; text-align: center; min-width: 120px;">
+                                <div style="font-size: 2rem;">⚙️</div>
+                                <h5>XAMPP</h5>
+                                <p style="font-size: 0.9rem;">仮想サーバー</p>
+                            </div>
+                        </div>
+                        
+                        <!-- XAMPP構成要素 -->
+                        <div style="margin-top: 30px; display: flex; justify-content: space-around;">
+                            <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 10px; text-align: center; min-width: 80px;">
+                                <div style="font-size: 1.5rem;">🅰️</div>
+                                <p style="font-size: 0.8rem; margin: 0;"><strong>Apache</strong><br>Webサーバー</p>
+                            </div>
+                            <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 10px; text-align: center; min-width: 80px;">
+                                <div style="font-size: 1.5rem;">🐘</div>
+                                <p style="font-size: 0.8rem; margin: 0;"><strong>MySQL</strong><br>データベース</p>
+                            </div>
+                            <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 10px; text-align: center; min-width: 80px;">
+                                <div style="font-size: 1.5rem;">🐍</div>
+                                <p style="font-size: 0.8rem; margin: 0;"><strong>PHP</strong><br>プログラム実行</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #e8f6f3; border-radius: 10px; border-left: 5px solid #27ae60;">
+                <p style="font-size: 1.2rem; color: #2c3e50; text-align: center; margin: 0;"><strong>メリット：</strong> 外部サーバー不要・即座にテスト・無料で学習可能</p>
+            </div>
+        </div>
+
+        <!-- スライド 8: PHPでのサーバー処理 -->
         <div class="slide">
             <h2>PHPでのサーバー処理例</h2>
             <div class="code-block">&lt;?php
@@ -410,7 +490,7 @@
             <p>サーバーが<span class="highlight">動的にHTML</span>を生成してクライアントに送信</p>
         </div>
 
-        <!-- スライド 8: クライアント側の処理 -->
+        <!-- スライド 9: クライアント側の処理 -->
         <div class="slide">
             <h2>クライアント側での処理</h2>
             <div class="tech-stack">
@@ -430,7 +510,7 @@
             <p style="margin-top: 30px;">ブラウザがこれらを解釈して、美しいWebページを表示します</p>
         </div>
 
-        <!-- スライド 9: 具体的な処理の流れ -->
+        <!-- スライド 10: 具体的な処理の流れ -->
         <div class="slide">
             <h2>具体的な処理の流れ</h2>
             <div class="url-bar">https://example.com/user.php?name=田中</div>
@@ -462,7 +542,7 @@
             </div>
         </div>
 
-        <!-- スライド 10: 静的サイト vs 動的サイト -->
+        <!-- スライド 11: 静的サイト vs 動的サイト -->
         <div class="slide">
             <h2>静的サイト vs 動的サイト</h2>
             <div style="display: flex; justify-content: space-between; gap: 30px; max-width: 1200px;">
@@ -511,7 +591,7 @@
             </div>
         </div>
 
-        <!-- スライド 11: レスポンスの中身 -->
+        <!-- スライド 12: レスポンスの中身 -->
         <div class="slide">
             <h2>サーバーからのレスポンス例</h2>
             <div style="display: flex; gap: 15px; align-items: flex-start; max-width: 1000px;">
@@ -554,7 +634,7 @@ Content-Type: text/html; charset=UTF-8
             </div>
         </div>
 
-        <!-- スライド 12: PHPを学ぶとできること -->
+        <!-- スライド 13: PHPを学ぶとできること -->
         <div class="slide">
             <h2>PHPを学ぶとできること</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; max-width: 1000px;">
@@ -625,7 +705,7 @@ Content-Type: text/html; charset=UTF-8
             </div>
         </div>
 
-        <!-- スライド 13: まとめ -->
+        <!-- スライド 14: まとめ -->
         <div class="slide">
             <h2>まとめ</h2>
             <ul style="font-size: 1.3rem; max-width: 700px;">
@@ -639,7 +719,7 @@ Content-Type: text/html; charset=UTF-8
             </div>
         </div>
 
-        <!-- スライド 14: 終了 -->
+        <!-- スライド 15: 終了 -->
         <div class="slide">
             <div style="margin-top: 50px;">
                 <h1 style="font-size: 3rem;">ありがとうございました！</h1>
@@ -649,7 +729,7 @@ Content-Type: text/html; charset=UTF-8
     </div>
 
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">14</span>
+        <span id="current-slide">1</span> / <span id="total-slides">15</span>
     </div>
 
     <div class="navigation">
